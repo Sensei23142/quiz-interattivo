@@ -1,121 +1,139 @@
 // Domande e risposte corrette
 const questions = [
   {
-    question: "Qual è il primo passaggio per modificare l'indirizzo di un distributore?",
+    question: "Qual è il primo passaggio per avviare un progetto?",
     options: {
-      a: "Selezionare il distributore da modificare",
-      b: "Modificare il grado di derivazione",
-      c: "Creare un nuovo distributore"
+      a: "Creare una cartella per ogni applicazione",
+      b: "Aprire Redmine, scaricare tutti i file ed inserirli nella cartella apposita dentro il server",
+      c: "Aprire Unica RA e prendere il codice centrale"
     },
-    correct: "a"
+    correct: "b"
   },
   {
-    question: "Come si verifica la certificazione del civico?",
+    question: "Dove vanno salvati i file scaricati dal server?",
     options: {
-      a: "Cliccando su 'Uscita'",
-      b: "Inserendo il nuovo indirizzo",
-      c: "Cliccando sul binocolo"
+      a: "In una cartella temporanea",
+      b: "Nella cartella 'Unica' dentro il server",
+      c: "Nella cartella di rete"
+    },
+    correct: "b"
+  },
+  {
+    question: "Cosa succede quando selezioni il distributore da modificare?",
+    options: {
+      a: "Si apre un menu di configurazione",
+      b: "Il distributore viene rimosso",
+      c: "Si esplode il distributore"
     },
     correct: "c"
   },
   {
-    question: "Qual è la funzione del pulsante 'Salva'?",
+    question: "Come si verifica la certificazione del civico durante la modifica di un indirizzo?",
     options: {
-      a: "Salvare le modifiche",
-      b: "Eliminare i dati",
-      c: "Annullare le modifiche"
-    },
-    correct: "a"
-  },
-  {
-    question: "Cosa succede se non si seleziona il distributore corretto?",
-    options: {
-      a: "Il sistema genera un errore",
-      b: "Non si può procedere",
-      c: "Il sistema chiude l'applicazione"
+      a: "Cliccando sul campo 'Verifica certificazione'",
+      b: "Cliccando sul binocolo accanto al civico",
+      c: "Verificando direttamente nel database"
     },
     correct: "b"
   },
   {
-    question: "Dove si trova l'opzione per visualizzare i dettagli del civico?",
+    question: "Qual è il primo passo per modificare il grado di derivazione di un distributore?",
     options: {
-      a: "Nel menu principale",
-      b: "Nel pannello laterale",
-      c: "Nella barra degli strumenti"
-    },
-    correct: "c"
-  },
-  {
-    question: "Come si avvia il programma per l'inserimento di un nuovo indirizzo?",
-    options: {
-      a: "Cliccando su 'Nuovo indirizzo' nel menu",
-      b: "Selezionando il tasto 'Start' e cercando l'opzione",
-      c: "Nella schermata di login"
+      a: "Selezionare il distributore da modificare e copiarne il codice",
+      b: "Aprire il file di configurazione e cercare il distributore",
+      c: "Modificare direttamente il grado senza selezionare il distributore"
     },
     correct: "a"
   },
   {
-    question: "Cosa accade se un campo obbligatorio non viene compilato?",
+    question: "Cosa deve essere fatto quando si crea un distributore su Unica?",
     options: {
-      a: "Il sistema consente di proseguire senza problemi",
-      b: "Il sistema visualizza un messaggio di errore",
-      c: "Il sistema ignora il campo"
+      a: "Selezionare 'Armadio' come filtro e inserire l'ubicazione",
+      b: "Cliccare su 'Aggiorna' per modificare l'indirizzo",
+      c: "Inserire il codice del distributore e configurare il civico manualmente"
+    },
+    correct: "a"
+  },
+  {
+    question: "Come si annulla un'operazione in corso durante la creazione di un distributore?",
+    options: {
+      a: "Premendo il pulsante 'Annulla' nel form",
+      b: "Chiudendo il programma",
+      c: "Premendo 'Esc' sulla tastiera"
+    },
+    correct: "a"
+  },
+  {
+    question: "Quando un distributore deve essere disattivato, quale passaggio seguire?",
+    options: {
+      a: "Selezionare il distributore e cliccare su 'OPI Disattestazione tratta'",
+      b: "Aprire il distributore e cliccare su 'Disattiva'",
+      c: "Semplicemente cancellare il distributore dal server"
+    },
+    correct: "a"
+  },
+  {
+    question: "Cosa succede quando si seleziona 'Refresh' durante la ricerca di un Work Order (WO)?",
+    options: {
+      a: "I dati vengono aggiornati e il WO selezionato appare nella lista",
+      b: "Il WO selezionato viene automaticamente chiuso",
+      c: "Il sistema cancella tutte le informazioni relative al WO"
+    },
+    correct: "a"
+  },
+  {
+    question: "Qual è il passo finale durante la creazione di uno splitter armadio?",
+    options: {
+      a: "Verificare la configurazione e inviare le fibre",
+      b: "Fare clic su 'Salva' e completare l'operazione",
+      c: "Salvare l'export Excel e tornare a Unica RA"
     },
     correct: "b"
   },
   {
-    question: "Come posso annullare un'operazione in corso?",
+    question: "Come si esegue il tracciamento OPI in Unica RA?",
     options: {
-      a: "Premendo il pulsante 'Annulla' sul form",
-      b: "Cliccando su 'Indietro' nella barra di navigazione",
-      c: "Chiudendo il programma"
+      a: "Inserendo il codice NTW nel campo 'Codice NTW' e cliccando su 'Nuova Ricerca'",
+      b: "Selezionando il Work Order dal menu 'Tracciamento'",
+      c: "Inserendo il codice distributore e cliccando 'Ricerca'"
     },
     correct: "a"
   },
   {
-    question: "Come si aggiunge un nuovo distributore?",
+    question: "Qual è il primo passo per creare un armadio su NGNEER?",
     options: {
-      a: "Selezionando 'Nuovo distributore' dal menu principale",
-      b: "Cliccando su 'Aggiungi nuovo' nella pagina del distributore",
-      c: "Inserendo manualmente i dati nella sezione dedicata"
+      a: "Cliccare su 'Ricerca Elementi di Rete' e selezionare 'Fibra Ottica'",
+      b: "Selezionare 'Modelli' e scegliere 'Armadio'",
+      c: "Inserire il codice armadio direttamente nella barra di ricerca"
+    },
+    correct: "a"
+  },
+  {
+    question: "Come si associa un armadio ottico a uno in rame?",
+    options: {
+      a: "Usando 'Zoom' per spostarsi nella posizione desiderata",
+      b: "Selezionando il tasto verde 'AO' e il tasto rosso 'AO'",
+      c: "Agganciando l'equipaggiamento direttamente nella schermata 'Modelli'"
     },
     correct: "b"
   },
   {
-    question: "Cosa fa il pulsante 'Aggiorna'?",
+    question: "Cosa bisogna fare per completare la chiusura di un Work Order (WO)?",
     options: {
-      a: "Aggiunge nuovi dati al sistema",
-      b: "Ricarica i dati correnti",
-      c: "Elimina i dati correnti"
-    },
-    correct: "b"
-  },
-  {
-    question: "Come si modifica il numero civico in un indirizzo?",
-    options: {
-      a: "Cliccando sull'icona di modifica accanto al civico",
-      b: "Modificando direttamente nel form",
-      c: "Non è possibile modificare il numero civico"
+      a: "Fare clic su 'Fine Aggiornamento Parziale' e 'Chiusura Aggiornamento Parziale'",
+      b: "Verificare il WO nella lista dei completati",
+      c: "Non fare nulla, il sistema chiuderà automaticamente il WO"
     },
     correct: "a"
   },
   {
-    question: "Come posso ottenere una panoramica dei distributori?",
+    question: "Quando si crea uno splitter primario in un armadio ottico, quale tipologia viene selezionata?",
     options: {
-      a: "Accedendo alla sezione 'Distributori' nel menu principale",
-      b: "Selezionando 'Panoramica' dalla barra laterale",
-      c: "Facendo clic su 'Visualizza dettagli' per ogni distributore"
+      a: "4 porte",
+      b: "8 porte",
+      c: "16 porte"
     },
     correct: "a"
-  },
-  {
-    question: "Qual è il passaggio finale dopo aver inserito un nuovo indirizzo?",
-    options: {
-      a: "Premere 'Invia' per salvare l'indirizzo",
-      b: "Cliccare su 'Annulla' per scartare le modifiche",
-      c: "Premere 'Salva' per confermare l'indirizzo"
-    },
-    correct: "c"
   }
 ];
 
