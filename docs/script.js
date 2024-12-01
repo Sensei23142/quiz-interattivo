@@ -1,7 +1,7 @@
 // Domande e risposte corrette
 const questions = [
   {
-    question: "1. Qual è il primo passaggio per modificare l'indirizzo di un distributore?",
+    question: "Qual è il primo passaggio per modificare l'indirizzo di un distributore?",
     options: {
       a: "Selezionare il distributore da modificare",
       b: "Modificare il grado di derivazione",
@@ -10,7 +10,7 @@ const questions = [
     correct: "a"
   },
   {
-    question: "2. Come si verifica la certificazione del civico?",
+    question: "Come si verifica la certificazione del civico?",
     options: {
       a: "Cliccando su 'Uscita'",
       b: "Inserendo il nuovo indirizzo",
@@ -19,35 +19,35 @@ const questions = [
     correct: "c"
   },
   {
-    question: "3. Quale menu si utilizza per aggiornare il grado di derivazione?",
+    question: "Qual è la funzione del pulsante 'Salva'?",
     options: {
-      a: "Applicazioni > Network Creation",
-      b: "Indirizzo > Network Update",
-      c: "Apparato > Load Top Level"
+      a: "Salvare le modifiche",
+      b: "Eliminare i dati",
+      c: "Annullare le modifiche"
     },
     correct: "a"
   },
   {
-    question: "4. Qual è la tipologia di splitter selezionata per armadi large?",
+    question: "Cosa succede se non si seleziona il distributore corretto?",
     options: {
-      a: "2 porte",
-      b: "4 porte",
-      c: "8 porte"
+      a: "Il sistema genera un errore",
+      b: "Non si può procedere",
+      c: "Il sistema chiude l'applicazione"
     },
     correct: "b"
   },
   {
-    question: "5. Qual è il comando per iniziare la creazione dello splitter ottico?",
+    question: "Dove si trova l'opzione per visualizzare i dettagli del civico?",
     options: {
-      a: "OPI Attestazione primaria",
-      b: "OPI Creazione splitter armadio ottico",
-      c: "OPI Scorporo distributori"
+      a: "Nel menu principale",
+      b: "Nel pannello laterale",
+      c: "Nella barra degli strumenti"
     },
-    correct: "b"
+    correct: "c"
   }
 ];
 
-// Funzione per rimescolare un array
+// Funzione per rimescolare le domande
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -108,23 +108,21 @@ document.getElementById("quiz-form").addEventListener("submit", function(event) 
     resultDiv.style.color = "red";
   }
 
-  // Cambia il pulsante in "Ricomincia"
-  const submitButton = document.getElementById("submit");
-  submitButton.textContent = "Ricomincia";
-  submitButton.onclick = resetQuiz;
+  // Mostra il tasto "Riprova"
+  document.getElementById("submit").style.display = "none";
+  document.getElementById("retry").style.display = "inline-block";
 });
 
 // Resetta il quiz
-function resetQuiz() {
+document.getElementById("retry").addEventListener("click", function () {
   const resultDiv = document.getElementById("result");
   resultDiv.innerHTML = ""; // Pulisce i risultati
   renderQuestions(); // Ricarica le domande in ordine casuale
 
-  // Ripristina il pulsante
-  const submitButton = document.getElementById("submit");
-  submitButton.textContent = "Invia";
-  submitButton.onclick = null;
-}
+  // Ripristina i pulsanti
+  document.getElementById("submit").style.display = "inline-block";
+  document.getElementById("retry").style.display = "none";
+});
 
 // Inizializza le domande
 renderQuestions();
