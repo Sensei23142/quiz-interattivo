@@ -44,8 +44,8 @@ const questions = [
       c: "Nella barra degli strumenti"
     },
     correct: "c"
-  }
-   {
+  },
+  {
     question: "Come si avvia il programma per l'inserimento di un nuovo indirizzo?",
     options: {
       a: "Cliccando su 'Nuovo indirizzo' nel menu",
