@@ -47,6 +47,7 @@ const questions = [
   }
 ];
 
+// Funzione per rimescolare un array
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -54,6 +55,7 @@ function shuffleArray(array) {
   }
 }
 
+// Funzione per mostrare le domande
 function renderQuestions() {
   const questionsContainer = document.getElementById("questions-container");
   questionsContainer.innerHTML = ""; // Pulisce il contenitore
@@ -83,6 +85,7 @@ function renderQuestions() {
   });
 }
 
+// Invia il quiz
 document.getElementById("quiz-form").addEventListener("submit", function(event) {
   event.preventDefault();
 
@@ -111,6 +114,7 @@ document.getElementById("quiz-form").addEventListener("submit", function(event) 
   submitButton.onclick = resetQuiz;
 });
 
+// Resetta il quiz
 function resetQuiz() {
   const resultDiv = document.getElementById("result");
   resultDiv.innerHTML = ""; // Pulisce i risultati
