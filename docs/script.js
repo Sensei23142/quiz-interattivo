@@ -45,6 +45,78 @@ const questions = [
     },
     correct: "c"
   }
+   {
+    question: "Come si avvia il programma per l'inserimento di un nuovo indirizzo?",
+    options: {
+      a: "Cliccando su 'Nuovo indirizzo' nel menu",
+      b: "Selezionando il tasto 'Start' e cercando l'opzione",
+      c: "Nella schermata di login"
+    },
+    correct: "a"
+  },
+  {
+    question: "Cosa accade se un campo obbligatorio non viene compilato?",
+    options: {
+      a: "Il sistema consente di proseguire senza problemi",
+      b: "Il sistema visualizza un messaggio di errore",
+      c: "Il sistema ignora il campo"
+    },
+    correct: "b"
+  },
+  {
+    question: "Come posso annullare un'operazione in corso?",
+    options: {
+      a: "Premendo il pulsante 'Annulla' sul form",
+      b: "Cliccando su 'Indietro' nella barra di navigazione",
+      c: "Chiudendo il programma"
+    },
+    correct: "a"
+  },
+  {
+    question: "Come si aggiunge un nuovo distributore?",
+    options: {
+      a: "Selezionando 'Nuovo distributore' dal menu principale",
+      b: "Cliccando su 'Aggiungi nuovo' nella pagina del distributore",
+      c: "Inserendo manualmente i dati nella sezione dedicata"
+    },
+    correct: "b"
+  },
+  {
+    question: "Cosa fa il pulsante 'Aggiorna'?",
+    options: {
+      a: "Aggiunge nuovi dati al sistema",
+      b: "Ricarica i dati correnti",
+      c: "Elimina i dati correnti"
+    },
+    correct: "b"
+  },
+  {
+    question: "Come si modifica il numero civico in un indirizzo?",
+    options: {
+      a: "Cliccando sull'icona di modifica accanto al civico",
+      b: "Modificando direttamente nel form",
+      c: "Non è possibile modificare il numero civico"
+    },
+    correct: "a"
+  },
+  {
+    question: "Come posso ottenere una panoramica dei distributori?",
+    options: {
+      a: "Accedendo alla sezione 'Distributori' nel menu principale",
+      b: "Selezionando 'Panoramica' dalla barra laterale",
+      c: "Facendo clic su 'Visualizza dettagli' per ogni distributore"
+    },
+    correct: "a"
+  },
+  {
+    question: "Qual è il passaggio finale dopo aver inserito un nuovo indirizzo?",
+    options: {
+      a: "Premere 'Invia' per salvare l'indirizzo",
+      b: "Cliccare su 'Annulla' per scartare le modifiche",
+      c: "Premere 'Salva' per confermare l'indirizzo"
+    },
+    correct: "c"
+  }
 ];
 
 // Funzione per rimescolare le domande
